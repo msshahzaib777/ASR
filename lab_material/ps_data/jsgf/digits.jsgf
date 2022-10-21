@@ -6,10 +6,9 @@
 
 grammar digits;
 
-public <move> = go forward ten meters;
+public <rule1> = <digit>*;
+public <rule2> = <digit>;
+public <rule3> = <digit><digit>;
+public <rule4> = <digit><digit><digit>;
 
-public <move2> = go <direction> <distance> [meter | meters];
-
-<direction> = forward | backward;
-
-<distance> = zero | one | two | three | four | five | six | seven | eight | nine | ten;
+<digit> = oh | zero | one | two | three | four | five | six | seven | eight | nine | ten;
