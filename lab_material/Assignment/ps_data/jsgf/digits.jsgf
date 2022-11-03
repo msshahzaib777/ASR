@@ -1,0 +1,14 @@
+#JSGF V1.0;
+
+/**
+ * JSGF Grammar for digits example
+ */
+
+grammar digits;
+
+public <rulen> = <digit>*;
+public <rule1> = <digit>;
+public <rule3> = <digit><digit><digit>;
+public <rule5> = <digit><digit><digit><digit><digit>;
+
+<digit> =  oh | zero | one | two | three | four | five | six | seven | eight | nine | ten;
